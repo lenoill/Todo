@@ -1,11 +1,11 @@
 //variables
-var table = [];
-var i = 0;
+const table = [];
+let i = 0;
 
 //ajouter un élement dans la table et met à jour l'affichage
 function addShow(){
     
-    var input1 = document.getElementById('todo').value;
+    let input1 = document.getElementById('todo').value;
     if(input1 === ""){
         alert("Faut écrire un truc gamin!")
     }else{
@@ -25,7 +25,7 @@ function addShow(){
 //Supprime un élément de la table et met à jour l'affichage
 function delShow(x){
     //on trouve l'id de la croix cliquée
-    var index1 = x.id;
+    let index1 = x.id;
     //on la supprime de la table
     table.splice(index1,1);
     //on met à jour la liste à partir de la table
