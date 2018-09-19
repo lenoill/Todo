@@ -5,3 +5,26 @@ body{
 li{
     list-style-type: none;
 }
+.form-container{
+    margin-top: 50px;
+    
+    
+}
+#form-input {
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#form-button{
+    height: 30px;
+    width: 30px;
+    background-color: dimgray;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 100%;
+    color: white;
+}

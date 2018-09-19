@@ -4,7 +4,7 @@ let i = 0;
 //add a item at the list
 function addShow(){
     
-    let input1 = document.getElementById('todo').value;
+    let input1 = document.getElementById('form-input').value;
     if(input1 === ""){
         alert("Faut écrire un truc gamin!")
     }else{
@@ -17,7 +17,7 @@ function addShow(){
         document.getElementById("list").innerHTML += "<li>"+table[i]+"<div class='lines' onclick='delShow(this)' id="+i +">&#10006</div>"+"</li>";
     }    
     //delete the input value at each add of a item
-    document.getElementById('todo').value = "";
+    document.getElementById('form-input').value = "";
     }
 }
 
@@ -33,7 +33,7 @@ function delShow(x){
         document.getElementById("list").innerHTML += "<li>"+table[i]+"<div class='lines' onclick='delShow(this)' id="+i +">&#10006</div>"+"</li>";
 
     //delete the input value at each add of a item (usefull when we delete a item with the search function)
-    document.getElementById('todo').value = "";
+    document.getElementById('form-input').value = "";
     }  
 }
 
@@ -42,7 +42,7 @@ function search(){
     //delete and update the view at each key press
     document.getElementById("list").innerHTML = "";
 
-    word = document.getElementById('todo').value;
+    word = document.getElementById('form-input').value;
 
     table.forEach(element => {
         if(element.includes(word)){
